@@ -1,0 +1,10 @@
+.additional__container-item-text{
+    width: 248px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    position: absolute;
+    bottom: 30px;
+    left: 18px;
+    z-index: 2;
+}

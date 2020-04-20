@@ -1,0 +1,9 @@
+.video__container-box-icon{
+    margin: 30px;
+    width: 41px;
+    height: 41px;
+    position: relative;
+    z-index: 2;
+    display: block;
+    background-image: url("../../images/__icon_play.png");
+}

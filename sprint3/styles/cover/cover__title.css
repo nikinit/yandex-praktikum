@@ -1,0 +1,11 @@
+.cover__title{
+    width: 100%;
+    margin: 274px auto 0 auto;
+    display: inline-block;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 78px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}

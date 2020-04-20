@@ -1,0 +1,10 @@
+.header__langs{
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    top: 17px;
+    right: 0;
+    width: 78px;
+    justify-content: space-between;
+    height: 24px;
+}
