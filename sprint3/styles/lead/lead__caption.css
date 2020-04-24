@@ -5,5 +5,23 @@
     letter-spacing: 0.15em;
     width: 636px;
     font-weight: 400;
-    
+    margin-top: 10.87px;
+}
+
+@media screen and (max-width : 1024px){
+    .lead__caption{
+        margin-top: 16px;
+    }
+}
+@media (max-width : 768px) {
+    /* стили для планшета */
+}
+@media (max-width : 425px) {
+    /* стили для широкого смартфона */
+}
+@media (max-width : 375px) {
+    /* стили для среднего смартфона */
+}
+@media (max-width : 320px) {
+    /* стили для малого смартфона */
 }

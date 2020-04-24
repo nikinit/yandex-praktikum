@@ -5,4 +5,24 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    align-content: space-between;
+}
+@media screen and (max-width : 1024px){
+    .photo-grid{
+        max-width: 928px;
+        height: 842px;
+        margin-bottom: 102px;
+    }
+}
+@media (max-width : 768px) {
+    /* стили для планшета */
+}
+@media (max-width : 425px) {
+    /* стили для широкого смартфона */
+}
+@media (max-width : 375px) {
+    /* стили для среднего смартфона */
+}
+@media (max-width : 320px) {
+    /* стили для малого смартфона */
 }

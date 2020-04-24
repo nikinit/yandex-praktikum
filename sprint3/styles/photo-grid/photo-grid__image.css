@@ -3,3 +3,21 @@
     height: 188px;
     background-size: contain;
 }
+@media screen and (max-width : 1024px){
+    .photo-grid__image{
+        width: 300px;
+        height: 200px;
+    }
+}
+@media (max-width : 768px) {
+    /* стили для планшета */
+}
+@media (max-width : 425px) {
+    /* стили для широкого смартфона */
+}
+@media (max-width : 375px) {
+    /* стили для среднего смартфона */
+}
+@media (max-width : 320px) {
+    /* стили для малого смартфона */
+}

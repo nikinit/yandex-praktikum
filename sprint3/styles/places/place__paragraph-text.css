@@ -1,15 +1,11 @@
-.place__title{
-    width: 460px;
-    font-weight: 900;
-    font-size: 72px;
-    line-height: 65px;
-    color: white;
-    margin-bottom: 60px;
-    margin-top: 0;
+.place__paragraph-text{
+    font-size: 18px;
+    line-height: 30px;
+    width: 484px;
 }
 @media screen and (max-width : 1024px){
-    .place__title{
-        margin-bottom: 40px;
+    .place__paragraph-text{
+        width: 456px;
     }
 }
 @media (max-width : 768px) {

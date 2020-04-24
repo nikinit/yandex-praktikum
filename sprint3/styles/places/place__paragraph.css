@@ -1,5 +1,3 @@
-.place__paragraph{
-    font-size: 18px;
-    line-height: 30px;
-    width: 484px;
+.place__paragraph:not(:nth-child(1)){
+    margin-top: 24px;
 }

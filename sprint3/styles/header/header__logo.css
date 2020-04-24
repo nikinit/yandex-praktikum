@@ -5,3 +5,6 @@
     top: 0;
     left: 0;
 }
+.header__logo:nth-child(1){
+    margin-right: auto;
+}

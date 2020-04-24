@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Inter:300,400,700,900&display=swap');
+.page{
+    width: 1440px;
+    background-color: #2a2c2f;
+    margin: 0 auto 0 auto;
+    font-family: "Inter", sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+@media screen and (max-width : 1024px){
+    .page{
+        max-width: 1024px;
+    }
+}
+@media (max-width : 768px) {
+    /* стили для планшета */
+}
+@media (max-width : 425px) {
+    /* стили для широкого смартфона */
+}
+@media (max-width : 375px) {
+    /* стили для среднего смартфона */
+}
+@media (max-width : 320px) {
+    /* стили для малого смартфона */
+}

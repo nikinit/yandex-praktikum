@@ -6,3 +6,6 @@
     color: #FFFFFF;
     text-decoration: none;
 }
+.footer__link:nth-child(5){
+    margin-right: auto;
+}

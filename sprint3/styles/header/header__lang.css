@@ -1,5 +1,10 @@
 .header__lang{
     font-size: 24px;
-    font-weight: 400;
-    width: 30px;
+    font-weight: normal;
+    line-height: 23px;
+    position: relative;
+    bottom: 12px;
+}
+.header__lang:nth-child(odd){
+    margin-left: 18px;
 }
