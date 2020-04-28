@@ -3,8 +3,24 @@
     font-weight: normal;
     font-size: 18px;
     line-height: 26px;
-    text-align: center;
     margin: 134px auto 0 auto;
     position: relative;
     z-index: 2;
+}
+@media screen and (max-width : 1024px){
+    .cover__subtitle{
+        margin: 69px auto 0 auto;
+    }
+}
+@media (max-width : 768px) {
+    /* стили для планшета */
+}
+@media (max-width : 425px) {
+    /* стили для широкого смартфона */
+}
+@media (max-width : 375px) {
+    /* стили для среднего смартфона */
+}
+@media (max-width : 320px) {
+    /* стили для малого смартфона */
 }

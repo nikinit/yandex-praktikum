@@ -1,3 +1,23 @@
 .place__paragraph:not(:nth-child(1)){
-    margin-top: 24px;
+    margin-top: 36px;
+}
+.place__paragraph{
+    max-width: 484px;
+}
+@media screen and (max-width : 1024px){
+    .place__paragraph{
+        max-width: 456px;
+    }
+}
+@media (max-width : 768px) {
+    /* стили для планшета */
+}
+@media (max-width : 425px) {
+    /* стили для широкого смартфона */
+}
+@media (max-width : 375px) {
+    /* стили для среднего смартфона */
+}
+@media (max-width : 320px) {
+    /* стили для малого смартфона */
 }

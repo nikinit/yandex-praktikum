@@ -5,7 +5,24 @@
     font-weight: 900;
     font-size: 72px;
     line-height: 78px;
-    text-align: center;
     position: relative;
     z-index: 2;
+}
+@media screen and (max-width : 1024px){
+    .cover__title{
+        margin-top: 211px;
+        width: 574px;
+    }
+}
+@media (max-width : 768px) {
+    /* стили для планшета */
+}
+@media (max-width : 425px) {
+    /* стили для широкого смартфона */
+}
+@media (max-width : 375px) {
+    /* стили для среднего смартфона */
+}
+@media (max-width : 320px) {
+    /* стили для малого смартфона */
 }
