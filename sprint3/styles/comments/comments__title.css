@@ -6,3 +6,10 @@
     line-height: 78px;
     text-align: center;
 }
+@media screen and (max-width : 800px){
+    .comments__title{
+        max-width: 660px;
+        font-size: 42px;
+        line-height: 46px;
+    }
+}

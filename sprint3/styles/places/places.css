@@ -4,12 +4,14 @@
 }
 @media screen and (max-width : 1024px){
     .places{
-        max-width: 928px;
+        width: calc(928vw / 1024 * 100);
         margin-top: 88px;
     }
 }
-@media (max-width : 768px) {
-    /* стили для планшета */
+@media screen and (max-width : 768px) {
+    .places{
+        width: calc(720vw / 768 * 100);
+    }
 }
 @media (max-width : 425px) {
     /* стили для широкого смартфона */

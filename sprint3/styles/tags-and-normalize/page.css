@@ -16,8 +16,10 @@
         max-width: 1024px;
     }
 }
-@media (max-width : 768px) {
-    /* стили для планшета */
+@media screen and(max-width : 768px) {
+    .page{
+        max-width: 768px;
+    }
 }
 @media (max-width : 425px) {
     /* стили для широкого смартфона */

@@ -3,17 +3,19 @@
     margin: 92px auto 0 auto;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-content: space-between;
 }
 @media screen and (max-width : 1024px){
     .photo-grid{
-        max-width: 928px;
+        width: calc(928vw / 1024 * 100);
         margin-bottom: 102px;
     }
 }
 @media (max-width : 768px) {
-    /* стили для планшета */
+    .photo-grid{
+        width: calc(720vw / 768 * 100);
+    }
 }
 @media (max-width : 425px) {
     /* стили для широкого смартфона */

@@ -15,7 +15,10 @@
     }
 }
 @media (max-width : 768px) {
-    /* стили для планшета */
+    .cover__title{
+        margin-top: 165px;
+        width: calc (720vw / 768 * 100);
+    }
 }
 @media (max-width : 425px) {
     /* стили для широкого смартфона */

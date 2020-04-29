@@ -1,8 +1,13 @@
 .comments__subtitle{
     margin: 48px auto 0 auto;
-    width: 640px;
+    max-width: 640px;
     font-weight: normal;
     font-size: 24px;
     line-height: 35px;
     text-align: center;
+}
+@media screen and (max-width : 768px){
+    .comments__subtitle{
+        width: calc(640vw / 768 * 100);
+    }
 }

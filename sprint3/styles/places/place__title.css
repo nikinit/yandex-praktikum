@@ -10,11 +10,17 @@
 @media screen and (max-width : 1024px){
     .place__title{
         margin-bottom: 40px;
-        max-width: 440px;
+        width: 42.9vw;
     }
 }
-@media (max-width : 768px) {
-    /* стили для планшета */
+@media screen and (max-width : 884px){
+    .place__title{
+        font-size: 42px;
+        line-height: 46px;
+    }
+}
+@media screen and (max-width : 768px) {
+    
 }
 @media (max-width : 425px) {
     /* стили для широкого смартфона */

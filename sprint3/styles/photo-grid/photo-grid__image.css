@@ -12,7 +12,11 @@
     }
 }
 @media (max-width : 768px) {
-    /* стили для планшета */
+    .photo-grid__image{
+        width: 352px;
+        height: 234px;
+        margin-bottom: 16px;
+    }
 }
 @media (max-width : 425px) {
     /* стили для широкого смартфона */

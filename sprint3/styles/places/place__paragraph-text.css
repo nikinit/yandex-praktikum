@@ -5,11 +5,15 @@
 }
 @media screen and (max-width : 1024px){
     .place__paragraph-text{
-        max-width: 456px;
+        width: 44.5vw;
     }
 }
 @media (max-width : 768px) {
-    /* стили для планшета */
+    .place__paragraph-text{
+        font-size: 16px;
+        line-height: 27px;
+        width: calc(352vw / 768 * 100);
+    }
 }
 @media (max-width : 425px) {
     /* стили для широкого смартфона */

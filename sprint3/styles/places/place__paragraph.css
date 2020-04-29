@@ -2,11 +2,11 @@
     margin-top: 36px;
 }
 .place__paragraph{
-    max-width: 484px;
+    
 }
 @media screen and (max-width : 1024px){
     .place__paragraph{
-        max-width: 456px;
+
     }
 }
 @media (max-width : 768px) {

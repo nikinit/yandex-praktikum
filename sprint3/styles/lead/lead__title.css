@@ -1,8 +1,23 @@
 .lead__title{
-    width: 782px;
+    max-width: 782px;
     font-size: 96px;
     font-weight: 900;
     text-align: center;
     line-height: 96.82%;
     margin: 0 auto 0 auto;
+}
+
+@media screen and (max-width : 768px) {
+    .lead__title{
+        width: calc(720vw / 768 * 100);
+    }
+}
+@media (max-width : 425px) {
+    /* стили для широкого смартфона */
+}
+@media (max-width : 375px) {
+    /* стили для среднего смартфона */
+}
+@media (max-width : 320px) {
+    /* стили для малого смартфона */
 }

@@ -6,7 +6,8 @@
 }
 @media screen and (max-width : 1024px){
     .place__address{
-        width: 456px;
+        width: 44.5vw;
+        margin-bottom: 40px;
     }
 }
 @media (max-width : 768px) {

@@ -1,7 +1,18 @@
 .comments__container{
-    width: 100%;
+    max-width: 1184px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    margin-top: 72px;
+    margin:72px auto 0 auto;
+}
+@media screen and (max-width: 1024px){
+    .comments__container{
+        width: calc(925vw / 1024 * 100);
+    }
+}
+@media screen and (max-width : 768px){
+    .comments__container{
+        flex-flow: column wrap;
+        
+    }
 }

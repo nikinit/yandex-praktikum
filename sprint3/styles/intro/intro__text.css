@@ -3,3 +3,13 @@
     font-size: 13px;
     line-height: 20px;
 }
+
+@media (max-width : 425px) {
+    /* стили для широкого смартфона */
+}
+@media (max-width : 375px) {
+    /* стили для среднего смартфона */
+}
+@media (max-width : 320px) {
+    /* стили для малого смартфона */
+}
