@@ -7,5 +7,6 @@
 @media screen and (max-width : 768px){
     .comments__container-comment-quote{
         margin-top: 24px;
+        text-align: left;
     }
 }

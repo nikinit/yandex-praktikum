@@ -5,14 +5,21 @@
 }
 @media screen and (max-width : 1024px){
     .place__paragraph-text{
-        width: 44.5vw;
+        width: calc(456vw / 1024 * 100);
     }
 }
-@media (max-width : 768px) {
+@media screen and(max-width : 768px) {
     .place__paragraph-text{
         font-size: 16px;
         line-height: 27px;
         width: calc(352vw / 768 * 100);
+    }
+}
+@media screen and (max-width : 550px){
+    .place__paragraph-text{
+        width: calc(100vw - 32px);
+        margin-left: 16px;
+        margin-right: 16px;
     }
 }
 @media (max-width : 425px) {

@@ -6,12 +6,19 @@
 }
 @media screen and (max-width : 1024px){
     .place__address{
-        width: 44.5vw;
+        width: calc(456vw / 1024 * 100);
         margin-bottom: 40px;
     }
 }
-@media (max-width : 768px) {
-    /* стили для планшета */
+@media screen and (max-width : 768px) {
+    .place__address{
+        width: calc(352vw / 768 * 100);
+    }
+}
+@media screen and (max-width : 550px){
+    .place__address{
+        display: none;
+    }
 }
 @media (max-width : 425px) {
     /* стили для широкого смартфона */

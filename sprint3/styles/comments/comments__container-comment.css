@@ -11,3 +11,8 @@
         margin-top: 48px;
     }
 }
+@media screen and (max-width : 375px){
+    .comments__container-comment{
+        width: calc(352vw / 375 * 100);
+    }
+}

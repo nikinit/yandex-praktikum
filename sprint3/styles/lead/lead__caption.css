@@ -3,7 +3,6 @@
     line-height: 12px;
     font-size: 10px;
     letter-spacing: 0.15em;
-    width: 636px;
     font-weight: 400;
     margin-top: 10.87px;
 }
@@ -18,11 +17,11 @@
         margin-left: 24px;
     }
 }
-@media (max-width : 425px) {
-    /* стили для широкого смартфона */
-}
+
 @media (max-width : 375px) {
-    /* стили для среднего смартфона */
+    .lead__caption{
+        margin-left: 16px;
+    }
 }
 @media (max-width : 320px) {
     /* стили для малого смартфона */

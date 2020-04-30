@@ -7,13 +7,17 @@
     font-weight: 400;
 }
 
-@media (max-width : 768px) {
+@media screen and (max-width : 768px) {
     .lead__subtitle{
-        width: 100vw;
+        width: 87vw;
     }
 }
-@media (max-width : 425px) {
-    /* стили для широкого смартфона */
+@media screen and (max-width : 734px) {
+    .lead__subtitle{
+        font-size: 16px;
+        line-height: 23px;
+        margin-top: 8px;
+    }
 }
 @media (max-width : 375px) {
     /* стили для среднего смартфона */

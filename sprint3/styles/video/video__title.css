@@ -11,3 +11,14 @@
         line-height: 46px;
     }
 }
+@media screen and (max-width : 550px){
+    .video__title{
+        font-size: 32px;
+        line-height: 35px;
+    }
+}
+@media screen and (max-width : 375px){
+    .video__title{
+        width: calc(343vw / 375 * 100);
+    }
+}

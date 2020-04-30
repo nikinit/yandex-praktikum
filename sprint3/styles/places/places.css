@@ -13,11 +13,15 @@
         width: calc(720vw / 768 * 100);
     }
 }
-@media (max-width : 425px) {
-    /* стили для широкого смартфона */
+@media screen and (max-width : 550px){
+    .places{
+        margin-top: 49px;
+        width: 100vw;
+    }
 }
+
 @media (max-width : 375px) {
-    /* стили для среднего смартфона */
+    
 }
 @media (max-width : 320px) {
     /* стили для малого смартфона */

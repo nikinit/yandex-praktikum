@@ -4,17 +4,21 @@
 }
 @media screen and (max-width : 1024px){
     .comments{
-        max-width: 928px;
+        width: calc(928vw / 1024 * 100);
     }
 }
 @media (max-width : 768px) {
+    .comments{
+        width: calc(660vw / 768 * 100);
 
+    }
 }
-@media (max-width : 425px) {
-    /* стили для широкого смартфона */
-}
+
 @media (max-width : 375px) {
-    /* стили для среднего смартфона */
+    .comments{
+        width: calc(100vw - 32px);
+        margin-top: 64px;
+    }
 }
 @media (max-width : 320px) {
     /* стили для малого смартфона */

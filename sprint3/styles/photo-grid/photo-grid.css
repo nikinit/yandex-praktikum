@@ -17,11 +17,16 @@
         width: calc(720vw / 768 * 100);
     }
 }
-@media (max-width : 425px) {
-    /* стили для широкого смартфона */
+@media screen and (max-width : 512px){
+    .photo-grid{
+        margin-bottom: 0;
+    }
 }
 @media (max-width : 375px) {
-    /* стили для среднего смартфона */
+    .photo-grid{
+        margin-top: 64px;
+        width: calc(100vw - 32px);
+    }
 }
 @media (max-width : 320px) {
     /* стили для малого смартфона */

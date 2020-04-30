@@ -5,8 +5,11 @@
 }
 
 
-@media (max-width : 425px) {
-    /* стили для широкого смартфона */
+@media screen and (max-width : 734px) {
+    .intro__title{
+        font-size: 32px;
+        line-height: 35px;
+    }
 }
 @media (max-width : 375px) {
     /* стили для среднего смартфона */

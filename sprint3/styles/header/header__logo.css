@@ -8,3 +8,9 @@
 .header__logo:nth-child(1){
     margin-right: auto;
 }
+@media screen and (max-width : 375px){
+    .header__logo{
+        width: 142px;
+        height: 42px;
+    }
+}

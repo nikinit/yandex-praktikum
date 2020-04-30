@@ -9,3 +9,9 @@
         margin-top: 56px;
     }
 }
+@media screen and (max-width : 600px){
+    .video__container{
+        flex-direction: column;
+        margin-top: 24px;
+    }
+}

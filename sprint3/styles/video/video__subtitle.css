@@ -6,3 +6,20 @@
     margin: 48px auto 0 auto;
     font-weight: 400;
 }
+@media screen and (max-width : 768px){
+    .video__subtitle{
+        width: calc(640vw / 768 * 100);
+        margin-top: 24px;
+    }
+}
+@media screen and (max-width : 550px){
+    .video__subtitle{
+        font-size: 16px;
+        line-height: 23px;
+    }
+}
+@media screen and (max-width : 375px){
+    .video__subtitle{
+        margin-top: 16px;
+    }
+}

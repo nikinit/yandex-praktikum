@@ -9,9 +9,17 @@
         margin-top: 65px;
     }
 }
-@media (max-width : 768px) {
+@media screen and (max-width : 768px) {
     .lead__image{
         height: 420px;
+        width: 100vw;
+        object-fit: cover;
+    }
+}
+@media screen and (max-width : 660px){
+    .lead__image{
+        height: auto;
+        object-fit: cover;
     }
 }
 @media (max-width : 425px) {

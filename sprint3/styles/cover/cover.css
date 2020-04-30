@@ -15,16 +15,21 @@
         height: 562px;
     }
 }
-@media (max-width : 768px) {
+@media screen and (max-width : 768px) {
     .cover{
         height: 500px;
     }
 }
-@media (max-width : 425px) {
-    /* стили для широкого смартфона */
+@media screen and (max-width : 676px){
+    .cover{
+        height: 272px;
+    }
 }
+
 @media (max-width : 375px) {
-    /* стили для среднего смартфона */
+    .cover{
+        margin-top: 48px;
+    }
 }
 @media (max-width : 320px) {
     /* стили для малого смартфона */

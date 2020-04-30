@@ -4,6 +4,7 @@
     flex-flow: row wrap;
     justify-content: space-between;
     margin:72px auto 0 auto;
+    font-weight: normal;
 }
 @media screen and (max-width: 1024px){
     .comments__container{
@@ -13,6 +14,11 @@
 @media screen and (max-width : 768px){
     .comments__container{
         flex-flow: column wrap;
-        
+        width: calc(660vw / 768 * 100);
+    }
+}
+@media screen and (max-width : 375px){
+    .comments__container{
+        width: calc(343vw / 375 * 100);
     }
 }

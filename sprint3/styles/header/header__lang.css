@@ -8,3 +8,9 @@
 .header__lang:nth-child(odd){
     margin-left: 18px;
 }
+@media screen and (max-width : 676px){
+    .header__lang{
+        font-size: 18px;
+        line-height: 96.82%;
+    }
+}

@@ -11,3 +11,14 @@
         width: calc(640vw / 768 * 100);
     }
 }
+@media screen and (max-width : 550px){
+    .comments__subtitle{
+        font-size: 16px;
+        line-height: 23px;
+    }
+}
+@media screen and (max-width : 375px){
+    .comments__subtitle{
+        margin-top: 16px;
+    }
+}

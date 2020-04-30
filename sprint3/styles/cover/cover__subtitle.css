@@ -12,6 +12,14 @@
         margin: 69px auto 0 auto;
     }
 }
+@media screen and (max-width : 676px){
+    .cover__subtitle{
+        margin-top: 7px;
+        font-size: 14px;
+        line-height: 17px;
+        width: 270px;
+    }
+}
 @media (max-width : 768px) {
     /* стили для планшета */
 }

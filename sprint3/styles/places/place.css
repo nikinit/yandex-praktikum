@@ -11,6 +11,12 @@
         margin-bottom: 83px;
     }
 }
+@media screen and (max-width : 550px){
+    .place{
+        margin-top: 48px;
+        margin-bottom: 0;
+    }
+}
 @media (max-width : 768px) {
     /* стили для планшета */
 }

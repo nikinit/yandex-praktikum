@@ -9,18 +9,30 @@
         height: 288px;
     }
 }
-@media (max-width : 768px) {
+@media screen and (max-width : 768px) {
     .video__container-box{
         width: calc(352vw / 768 * 100);
         height: 200px;
     }
 }
-@media (max-width : 425px) {
-    /* стили для широкого смартфона */
+@media screen and (max-width : 600px){
+    .video__container-box{
+        width: 343px;
+        margin: 0 auto 0 auto;
+    }
+    .video__container-box:nth-child(1){
+        margin-bottom: 8px;
+    }
 }
+
 @media (max-width : 375px) {
-    /* стили для среднего смартфона */
+    .video__container-box{
+        width: calc(100vw - 32px);
+        height: 200px;
+    }
 }
 @media (max-width : 320px) {
-    /* стили для малого смартфона */
+    .video__container-box{
+        height: 192px;
+    }
 }
