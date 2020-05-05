@@ -6,6 +6,9 @@
     margin: 134px auto 0 auto;
     position: relative;
     z-index: 2;
+    text-decoration: none;
+    color: white;
+    display: block;
 }
 @media screen and (max-width : 1024px){
     .cover__subtitle{

@@ -9,6 +9,9 @@
     background-repeat: no-repeat;
     text-align: center;
 }
+.cover:hover > .cover__bg{
+    opacity: .8;
+}
 @media screen and (max-width : 1024px){
     .cover{
         width: 100%;
@@ -31,6 +34,9 @@
         margin-top: 48px;
     }
 }
-@media (max-width : 320px) {
-    /* стили для малого смартфона */
+@media screen and (max-width : 320px) {
+    .cover{
+        height: 216px;
+        margin-top: 64px;
+    }
 }

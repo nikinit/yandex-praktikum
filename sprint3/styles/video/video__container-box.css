@@ -3,6 +3,10 @@
     height: 323px;
     position: relative;
 }
+
+.video__container-box:hover > .video__container-box-darkening{
+    opacity: .8;
+}
 @media screen and (max-width : 1024px){
     .video__container-box{
         width: calc(456vw / 1024 * 100);

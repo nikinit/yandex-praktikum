@@ -7,6 +7,8 @@
     line-height: 78px;
     position: relative;
     z-index: 2;
+    text-decoration: none;
+    color: white;
 }
 @media screen and (max-width : 1024px){
     .cover__title{
@@ -28,12 +30,9 @@
         width: 225px;
     }
 }
-@media (max-width : 425px) {
-    /* стили для широкого смартфона */
-}
-@media (max-width : 375px) {
-    /* стили для среднего смартфона */
-}
-@media (max-width : 320px) {
-    /* стили для малого смартфона */
+
+@media screen and (max-width : 320px) {
+    .cover__title{
+        margin-top: 64px;
+    }
 }

@@ -4,6 +4,8 @@
     line-height: 23px;
     position: relative;
     bottom: 12px;
+    color: white;
+    text-decoration: none;
 }
 .header__lang:nth-child(odd){
     margin-left: 18px;
