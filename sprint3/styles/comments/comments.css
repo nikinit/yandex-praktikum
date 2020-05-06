@@ -1,6 +1,6 @@
 .comments{
     max-width: 1184px;
-    margin: 102px auto 0 auto;
+    margin: 96px auto 0 auto;
 }
 @media screen and (max-width : 1024px){
     .comments{

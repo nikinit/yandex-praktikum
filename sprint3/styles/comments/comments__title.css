@@ -9,6 +9,7 @@
 @media screen and (max-width : 1024px){
     .comments__title{
         width: auto;
+        line-height: 65px;
     }
 }
 @media screen and (max-width : 828px){
