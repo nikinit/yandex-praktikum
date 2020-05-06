@@ -4,8 +4,9 @@
 }
 @media screen and (max-width : 768px){
     .comments__container-comment{
-        width: calc(382vw / 768 * 100);
+        max-width: 382px;
         text-align: center;
+        width: auto;
     }
     .comments__container-comment:not(:nth-of-type(1)){
         margin-top: 48px;

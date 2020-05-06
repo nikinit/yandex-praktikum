@@ -1,3 +1,8 @@
+@import url("./lead__title.css");
+@import url("./lead__subtitle.css");
+@import url("./lead__image.css");
+@import url("./lead__image-route.css");
+@import url("./lead__caption.css");
 .lead{
     max-width: 985px;
     margin: 48px auto 0 auto;
@@ -12,13 +17,4 @@
     .lead{
         width: 100%;
     }
-}
-@media (max-width : 425px) {
-    /* стили для широкого смартфона */
-}
-@media (max-width : 375px) {
-    /* стили для среднего смартфона */
-}
-@media (max-width : 320px) {
-    /* стили для малого смартфона */
 }

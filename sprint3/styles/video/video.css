@@ -1,3 +1,15 @@
+@import url("./video__title.css");
+@import url("./video__subtitle.css");
+@import url("./video__container.css");
+@import url("./video__container-box.css");
+@import url("./video__container-box-title.css");
+@import url("./video__container-box-time.css");
+@import url("./video__container-box-info.css");
+@import url("./video__container-box-icon.css");
+@import url("./video__container-box-darkening.css");
+@import url("./video__container-box-bg.css");
+@import url("./video__container-box-author.css");
+
 .video{
     max-width: 1184px;
     margin: 96px auto 0 auto;
@@ -12,9 +24,7 @@
         width: calc(720vw / 768 * 100);
     }
 }
-@media (max-width : 425px) {
-    /* стили для широкого смартфона */
-}
+
 @media (max-width : 375px) {
     .video{
         margin-top: 64px;

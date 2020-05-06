@@ -1,3 +1,10 @@
+@import url('./intro__content-row.css');
+@import url('./intro__content-row-first-column.css');
+@import url('./intro__content-row-second-column.css');
+@import url('./intro__subtitle.css');
+@import url('./intro__title.css');
+@import url('./intro__text.css');
+
 .intro{
     max-width: 984px;
     margin: 80px auto 0 auto;
@@ -17,7 +24,4 @@
         margin-top: 64px;
         width: calc(100vw - 32px);
     }
-}
-@media (max-width : 320px) {
-    /* стили для малого смартфона */
 }

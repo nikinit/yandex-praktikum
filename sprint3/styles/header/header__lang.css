@@ -5,6 +5,8 @@
     position: relative;
     bottom: 12px;
     color: white;
+}
+.header__lang:nth-child(3){
     text-decoration: none;
 }
 .header__lang:nth-child(odd){

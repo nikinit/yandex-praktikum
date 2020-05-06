@@ -17,7 +17,6 @@
 @media screen and (max-width : 768px) {
     .lead__image{
         margin-top: 78px;
-        width: 100vw;
         height: calc(420vw / 768 * 100);
     }
 }

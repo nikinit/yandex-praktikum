@@ -1,33 +1,12 @@
-.place__paragraph-text{
-    font-size: 18px;
-    line-height: 30px;
-    max-width: 484px;
+.place__paragraph-text:not(:nth-child(1)){
+    margin-top: 36px;
 }
-@media screen and (max-width : 1024px){
-    .place__paragraph-text{
-        width: calc(456vw / 1024 * 100);
-    }
-}
-@media screen and(max-width : 768px) {
-    .place__paragraph-text{
-        font-size: 16px;
-        line-height: 27px;
-        width: calc(352vw / 768 * 100);
-    }
-}
+
 @media screen and (max-width : 550px){
-    .place__paragraph-text{
-        width: calc(100vw - 32px);
-        margin-left: 16px;
-        margin-right: 16px;
+    .place__paragraph-text:not(:nth-child(1)){
+        margin-top: 24px;
     }
-}
-@media (max-width : 425px) {
-    /* стили для широкого смартфона */
-}
-@media (max-width : 375px) {
-    /* стили для среднего смартфона */
-}
-@media (max-width : 320px) {
-    /* стили для малого смартфона */
+    .place__paragraph-text{
+        margin-top: 24px;
+    }
 }

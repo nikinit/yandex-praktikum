@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Inter:300,400,600,700,900&display=swap');
+@import url("./body.css");
+@import url("./normalize.css");
+
 .page{
     max-width: 1440px;
     background-color: #2a2c2f;
@@ -20,13 +23,4 @@
     .page{
         max-width: 768px;
     }
-}
-@media (max-width : 425px) {
-    /* стили для широкого смартфона */
-}
-@media (max-width : 375px) {
-    /* стили для среднего смартфона */
-}
-@media (max-width : 320px) {
-    /* стили для малого смартфона */
 }

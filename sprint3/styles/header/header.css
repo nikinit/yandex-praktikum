@@ -1,3 +1,6 @@
+@import url("./header__logo.css");
+@import url("./header__lang_underlined.css");
+@import url("./header__lang.css");
 .header{
     max-width: 1184px;
     height: 52px;
@@ -27,7 +30,4 @@
         margin-top: 16px;
         width: calc(100vw - 32px);
     }
-}
-@media (max-width : 320px) {
-    /* стили для малого смартфона */
 }
