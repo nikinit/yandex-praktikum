@@ -1,0 +1,7 @@
+.barentsburg__columns{
+    margin-top: 48px;
+    display: flex;
+    width: 782px;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}

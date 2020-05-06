@@ -1,0 +1,29 @@
+@import url("./comments__title.css");
+@import url("./comments__subtitle.css");
+@import url("./comments__container.css");
+@import url("./comments__container-comment.css");
+@import url("./comments__container-comment-quote.css");
+@import url("./comments__container-comment-image.css");
+@import url("./comments__container-comment-author.css");
+.comments{
+    max-width: 1184px;
+    margin: 96px auto 0 auto;
+}
+@media screen and (max-width : 1024px){
+    .comments{
+        width: calc(928vw / 1024 * 100);
+    }
+}
+@media (max-width : 768px) {
+    .comments{
+        width: calc(660vw / 768 * 100);
+
+    }
+}
+
+@media (max-width : 375px) {
+    .comments{
+        width: calc(100vw - 32px);
+        margin-top: 64px;
+    }
+}

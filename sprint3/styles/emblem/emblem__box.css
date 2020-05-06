@@ -1,0 +1,7 @@
+.emblem__box{
+    margin-top: 82px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+}

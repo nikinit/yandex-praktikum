@@ -1,0 +1,22 @@
+.place__address{
+    height: 46px;
+    width: 484px;
+    align-self: flex-end;
+    margin-bottom: 60px;
+}
+@media screen and (max-width : 1024px){
+    .place__address{
+        width: calc(456vw / 1024 * 100);
+        margin-bottom: 40px;
+    }
+}
+@media screen and (max-width : 768px) {
+    .place__address{
+        width: calc(352vw / 768 * 100);
+    }
+}
+@media screen and (max-width : 550px){
+    .place__address{
+        display: none;
+    }
+}

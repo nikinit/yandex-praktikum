@@ -1,0 +1,34 @@
+.lead__image{
+    margin: 78px auto 0 auto;
+    width: 100%;
+    height: 554px;
+    display: inline-block;
+    background-image: url('../../images/train.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+@media screen and (max-width : 1024px){
+    .lead__image{
+        margin-top: 65px;
+        background-size: cover;
+        height: calc(554vw / 1024 * 100);
+    }
+}
+@media screen and (max-width : 768px) {
+    .lead__image{
+        margin-top: 78px;
+        height: calc(420vw / 768 * 100);
+    }
+}
+@media screen and (max-width : 375px){
+    .lead__image{
+        height: calc(211vw / 375 * 100);
+        margin-top: 32px;
+    }
+}
+
+@media (max-width : 320px) {
+    .lead__image{
+        height: calc(211vw / 375 * 100);
+    }
+}

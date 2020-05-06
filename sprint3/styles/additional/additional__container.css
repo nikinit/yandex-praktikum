@@ -1,0 +1,6 @@
+.additional__container{
+    width: 100%;
+    display: flex;
+    margin-top: 72px;
+    justify-content: space-between;
+}

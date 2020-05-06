@@ -1,0 +1,10 @@
+@import url("./emblem__title.css");
+@import url("./emblem__box.css");
+@import url("./emblem__box-item.css");
+@import url("./emblem__box-item-name.css");
+@import url("./emblem__box-item-emblem.css");
+.emblem{
+    width: 1184px;
+    margin: 82px auto 0 auto;
+    display: none;
+}

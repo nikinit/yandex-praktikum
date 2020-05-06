@@ -1,0 +1,12 @@
+.place__paragraph-text:not(:nth-child(1)){
+    margin-top: 36px;
+}
+
+@media screen and (max-width : 550px){
+    .place__paragraph-text:not(:nth-child(1)){
+        margin-top: 24px;
+    }
+    .place__paragraph-text{
+        margin-top: 24px;
+    }
+}

@@ -1,0 +1,46 @@
+@import url("./cover__title.css");
+@import url("./cover__subtitle.css");
+@import url("./cover__bg.css");
+
+.cover{
+    max-width: 1184px;
+    height: 594px;
+    margin: 102px auto 0 auto;
+    position: relative;
+    z-index: 0;
+    background-image: url("../../images/station-cover.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.cover:hover > .cover__bg{
+    opacity: .8;
+}
+@media screen and (max-width : 1024px){
+    .cover{
+        width: 100%;
+        height: 562px;
+    }
+}
+@media screen and (max-width : 768px) {
+    .cover{
+        height: 500px;
+    }
+}
+@media screen and (max-width : 676px){
+    .cover{
+        height: 272px;
+    }
+}
+
+@media (max-width : 375px) {
+    .cover{
+        margin-top: 48px;
+    }
+}
+@media screen and (max-width : 320px) {
+    .cover{
+        height: 216px;
+        margin-top: 64px;
+    }
+}

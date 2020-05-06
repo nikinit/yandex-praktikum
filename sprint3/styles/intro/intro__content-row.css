@@ -1,0 +1,11 @@
+.intro__content-row{
+    margin-top: 48px;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+}
+@media screen and (max-width : 375px){
+    .intro__content-row{
+        margin-top: 32px;
+    }
+}

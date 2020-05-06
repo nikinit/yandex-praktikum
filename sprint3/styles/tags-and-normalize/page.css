@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Inter:300,400,600,700,900&display=swap');
+@import url("./body.css");
+@import url("./normalize.css");
+
+.page{
+    max-width: 1440px;
+    background-color: #2a2c2f;
+    margin: 0 auto 0 auto;
+    font-family: "Inter", sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+@media screen and (max-width : 1024px){
+    .page{
+        max-width: 1024px;
+    }
+}
+@media screen and(max-width : 768px) {
+    .page{
+        max-width: 768px;
+    }
+}

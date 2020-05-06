@@ -1,0 +1,20 @@
+.header__lang{
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 23px;
+    position: relative;
+    bottom: 12px;
+    color: white;
+}
+.header__lang:nth-child(3){
+    text-decoration: none;
+}
+.header__lang:nth-child(odd){
+    margin-left: 18px;
+}
+@media screen and (max-width : 676px){
+    .header__lang{
+        font-size: 18px;
+        line-height: 96.82%;
+    }
+}

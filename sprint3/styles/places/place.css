@@ -1,0 +1,19 @@
+.place{
+    margin-top: 72px;
+    max-width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+@media screen and (max-width : 1024px){
+    .place{
+        margin-bottom: 83px;
+    }
+}
+@media screen and (max-width : 550px){
+    .place{
+        margin-top: 48px;
+        margin-bottom: 0;
+    }
+}

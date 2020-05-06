@@ -1,0 +1,36 @@
+.comments__title{
+    width: 800px;
+    margin: 0 auto 0 auto;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 78px;
+    text-align: center;
+}
+@media screen and (max-width : 1024px){
+    .comments__title{
+        width: auto;
+        line-height: 65px;
+    }
+}
+@media screen and (max-width : 828px){
+    .comments__title{
+        font-size: 42px;
+        line-height: 46px;
+    }
+}
+@media screen and (max-width : 768px){
+    .comments__title{
+        width: calc(660vw / 768 * 100)
+    }
+}
+@media screen and (max-width : 550px){
+    .comments__title{
+        font-size: 32px;
+        line-height: 35px;
+    }
+}
+@media screen and (max-width : 375px){
+    .comments__title{
+        width: calc(343vw / 375 * 100);
+    }
+}
