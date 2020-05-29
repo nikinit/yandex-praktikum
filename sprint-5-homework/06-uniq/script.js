@@ -8,13 +8,13 @@
 */
 
 function uniq(arr) {
-    let res = [];
-    arr.filter(function(number){
-        if(!res.includes(number)){
-            res.push(number);
+    let res = {};
+    for(let i = 0; i < arr.length; i++){
+        if(res[arr[i]] === undefined){
+            res[arr[i]] = arr[i];
         }
-    });
-    return res;
+    }
+    return Object.values(res);
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
