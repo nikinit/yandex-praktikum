@@ -29,4 +29,4 @@ console.log(isPrime(3)); // true
 console.log(isPrime(6)); // false
 console.log(isPrime(17)); // true
 console.log(isPrime(9)); // false
-console.log(isPrime(9007199254740991)); //true
+console.log(isPrime(1000000000091)); //true

@@ -7,9 +7,9 @@
 */
 
 function capitalize(str) {
-    str = str.split(' ');
+    const words = str.split(' ');
     let capitalised = '';
-    str.forEach(function(word, index, arr){
+    words.forEach(function(word, index, arr){
         if(typeof word[0] === 'undefined'){
             capitalised += ' ';
         }
@@ -17,7 +17,6 @@ function capitalize(str) {
         capitalised += `${word[0].toUpperCase() + word.slice(1)} `;
         }
     });
-    console.log(capitalised.slice(0,-1));
     return capitalised.slice(0,-1);
 }
 
@@ -25,3 +24,4 @@ function capitalize(str) {
 
 console.log(capitalize('молодость всё простит')); // "Молодость Всё Простит"
 console.log(capitalize('слово '));
+console.log(capitalize('Молодость  Всё  Простит'));

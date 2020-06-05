@@ -2,9 +2,9 @@ function palindrome(str) {
     if(!str){
         return true;
     }
-    str = str.match(/[a-zA-Zа-яА-Я]/ig).join('').toLowerCase();
-    start = str.slice(0, Math.floor(str.length / 2));
-    end = str.slice(Math.round(str.length / 2)).split('').reverse().join('');
+    const strClean = str.match(/[a-zA-Zа-яА-Я]/ig).join('').toLowerCase();
+    const start = strClean.slice(0, Math.floor(str.length / 2));
+    const end = strClean.slice(Math.round(str.length / 2)).split('').reverse().join('');
     return start === end;
 }
 

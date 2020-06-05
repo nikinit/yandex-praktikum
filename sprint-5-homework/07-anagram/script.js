@@ -9,19 +9,18 @@
 */
 
 function anagram(str1, str2) {
-    console.log(str1,str2);
     if(str1.length !== str2.length){
         return false;
     }
-    str1 = str1.match(/[a-zA-Zа-яА-Я]/ig).join('').toLowerCase();
-    str2 = str2.match(/[a-zA-Zа-яА-Я]/ig).join('').toLowerCase();
+    const str1Clean = str1.match(/[a-zA-Zа-яА-Я]/ig).join('').toLowerCase();
+    const str2Clean = str2.match(/[a-zA-Zа-яА-Я]/ig).join('').toLowerCase();
     let letters = {};
     for(let i = 0; i < str1.length; i++){
-        letters[str1[i]] === undefined ? letters[str1[i]] = 1 : letters[str1[i]]++;
+        letters[str1Clean[i]] === undefined ? letters[str1Clean[i]] = 1 : letters[str1Clean[i]]++;
     };
-    for(let i = 0; i < str2.length; i++){
-        letters[str2[i]] === undefined ? false : letters[str2[i]]--;
-        if(letters[str2[i]] < 0){
+    for(let i = 0; i < str2Clean.length; i++){
+        letters[str2Clean[i]] === undefined ? false : letters[str2Clean[i]]--;
+        if(letters[str2Clean[i]] < 0){
             return false;
         }
     }
