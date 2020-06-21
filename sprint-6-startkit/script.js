@@ -102,6 +102,7 @@ function inputHandler(event){
             validatePlace = true;
         }
     } catch(error){
+        validatePlace = false;
     }
     if(place.value.length === 0 || picture.value.length === 0 || validatePlace === false){
         addButton.setAttribute('disabled', true);
