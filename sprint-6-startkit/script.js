@@ -96,6 +96,7 @@ function inputHandler(event){
         img.src = url.href;
         img.onerror = function(){
             addButton.setAttribute('disabled', true);
+            picture.setAttribute('style', 'border-bottom-color: red;');
             validatePlace = false;
         }
         img.onload = function(){
@@ -104,10 +105,22 @@ function inputHandler(event){
     } catch(error){
         validatePlace = false;
     }
+    console.log(place.value.length, picture.value.length, validatePlace);
     if(place.value.length === 0 || picture.value.length === 0 || validatePlace === false){
         addButton.setAttribute('disabled', true);
+        place.setAttribute('style', 'border-bottom-color: red;');
+        picture.setAttribute('style', 'border-bottom-color: red;');
+        if (place.value.length !== 0){
+          place.removeAttribute('style', 'border-bottom-color: red;');
+        }
+        if (picture.value.length !== 0 && validatePlace !== false){
+          picture.removeAttribute('style', 'border-bottom-color: red;');
+        }
+
     }
     else{
+        place.removeAttribute('style', 'border-bottom-color: red;');
+        picture.removeAttribute('style', 'border-bottom-color: red;');
         addButton.removeAttribute('disabled');
     }
 }
