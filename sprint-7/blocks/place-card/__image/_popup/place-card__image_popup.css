@@ -1,0 +1,6 @@
+.place-card__image_popup{
+  max-width: 80vw;
+  max-height: 80vh;
+  position: relative;
+  visibility: hidden;
+}

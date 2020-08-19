@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mesto</title>
+  <link rel="stylesheet" href="./pages/index.css">
+</head>
+<body>
+  <div class="root">
+    <header class="header root__section">
+      <img src="./images/logo.svg" alt="mesto logo" class="logo">
+    </header>
+    <div class="profile root__section">
+      <div class="user-info">
+        <div class="user-info__photo"></div>
+        <div class="user-info__data">
+          <h1 class="user-info__name">Jaques Causteau</h1>
+          <p class="user-info__job">Sailor, Researcher</p>
+          <button class="user-info__edit-button">Edit</button>
+        </div>
+        <button class="button user-info__add-button">+</button>
+      </div>
+    </div>
+    <div class="places-list root__section">
+    </div>
+    <div class="popup" id="addPopup">
+      <div class="popup__content">
+        <div class="popup__close" id="addClose"></div>
+        <h3 class="popup__title">Новое место</h3>
+        <form class="popup__form" name="add">
+            <input type="text" name="name" class="popup__input popup__input_type_name" placeholder="Название" required>
+            <h4 class="popup__error" id="placeError" aria-live="polite"></h4><!---->
+            <input type="url" name="link" class="popup__input popup__input_type_link-url" placeholder="Ссылка на картинку" required>
+            <h4 class="popup__error" id="pictureError" aria-live="polite"></h4><!---->
+            <button type class="button popup__button" id="addButton">+</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="popup" id="editPopup">
+      <div class="popup__content">
+        <div class="popup__close" id="editClose"></div>
+        <h3 class="popup__title">Редактировать профиль</h3>
+        <form class="popup__form" name="edit">
+            <input type="text" name="name" class="popup__input popup__input_type_name" placeholder="Имя" required>
+            <h4 class="popup__error" id="nameError" aria-live="polite"></h4><!---->
+            <input type="text" name="about" class="popup__input popup__input_type_link-url" placeholder="О себе" required>
+            <h4 class="popup__error" id="aboutError" aria-live="polite"></h4><!---->
+            <button type class="button popup__button" id="editButton" style="font-size: 18px;">Сохранить</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
