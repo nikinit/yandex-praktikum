@@ -30,7 +30,7 @@
         <div class="popup__close" id="addClose"></div>
         <h3 class="popup__title">Новое место</h3>
         <form class="popup__form" name="add">
-            <input type="text" name="name" class="popup__input popup__input_type_name" placeholder="Название" required>
+            <input type="text" name="name" class="popup__input popup__input_type_name popup__input_border-red" placeholder="Название" required>
             <h4 class="popup__error" id="placeError" aria-live="polite"></h4><!---->
             <input type="url" name="link" class="popup__input popup__input_type_link-url" placeholder="Ссылка на картинку" required>
             <h4 class="popup__error" id="pictureError" aria-live="polite"></h4><!---->
@@ -50,6 +50,13 @@
             <h4 class="popup__error" id="aboutError" aria-live="polite"></h4><!---->
             <button type class="button popup__button" id="editButton" style="font-size: 18px;">Сохранить</button>
         </form>
+      </div>
+    </div>
+
+    <div class="popup" id="imagePopup">
+      <div style="background-image: url(); position: relative; background-size: cover; background-repeat: no-repeat">
+        <img class="place-card__image_popup" src="" alt="popup image">
+        <div class="popup__close" id="imageClose"></div>
       </div>
     </div>
 
