@@ -51,18 +51,18 @@ const popupClasses = {
   popupOpened: 'popup_is-opened',
 }
 const places = document.querySelector('.places-list');
-const editForm = document.forms.edit;
 const editPopup = document.getElementById('editPopup');
 const openEditButton = document.querySelector('.user-info__edit-button');
 const editButton = document.getElementById('editButton');
 const closeEditFormButton = document.getElementById('editClose');
-const addForm = document.forms.add;
 const addPopup = document.getElementById('addPopup');
 const openAddButton = document.querySelector('.user-info__add-button');
 const addButton = document.getElementById('addButton');
 const closeAddFormButton = document.getElementById('addClose');
 const imagePopup = document.getElementById('imagePopup');
 const forms = [...document.forms];
+const addForm = document.forms.add;
+const editForm = document.forms.edit;
 const popups = [...document.querySelectorAll('.popup')];
 
 function createCard(placeValue, pictureValue){
@@ -106,12 +106,16 @@ function addCard(event){
 }
 
 function openAddForm(){
+  const nameInput = addForm.querySelector('.popup__input_type_name');
+  const urlInput = addForm.querySelector('.popup__input_type_link-url');
   const placeError = document.getElementById('placeError');
   const pictureError = document.getElementById('pictureError');
   addPopup.classList.add(popupClasses.popupOpened);
   addButton.setAttribute('disabled', true);
   placeError.textContent = '';
   pictureError.textContent = '';
+  nameInput.value = '';
+  urlInput.value = '';
 }
 
 function openEditForm(){
@@ -155,8 +159,8 @@ function deleteCard(event){
 function openImage(event){
   if(event.target.classList.contains('place-card__image')){
     const imageAddress = event.target.style.backgroundImage;
-    const imageBox = imagePopup.children[0];
-    const image = imageBox.children[0];
+    const imageBox = imagePopup.children[0]; //fix
+    const image = imageBox.children[0]; //fix
     imagePopup.classList.add(popupClasses.popupOpened);
     imageBox.style.backgroundImage = imageAddress;
     image.src = imageAddress.slice(5, -2);
