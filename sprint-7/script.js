@@ -48,8 +48,23 @@ const errorMessages = {
 };
 
 const popupClasses = {
+  popup: 'popup',
   popupOpened: 'popup_is-opened',
+  input: 'popup__input',
+  error: 'popup__error',
+  button: 'popup__button',
 }
+
+const cardClasses = {
+  card: 'place-card',
+  like: 'place-card__like-icon',
+  liked: 'place-card__like-icon_liked',
+  image: 'place-card__image',
+  delete: 'place-card__delete-icon',
+  name: 'place-card__name',
+  description: 'place-card__description',
+}
+
 const places = document.querySelector('.places-list');
 const editPopup = document.getElementById('editPopup');
 const openEditButton = document.querySelector('.user-info__edit-button');
@@ -63,7 +78,9 @@ const imagePopup = document.getElementById('imagePopup');
 const forms = [...document.forms];
 const addForm = document.forms.add;
 const editForm = document.forms.edit;
-const popups = [...document.querySelectorAll('.popup')];
+const name = editForm.elements.name;
+const about = editForm.elements.about;
+const popups = [...document.querySelectorAll(`.${popupClasses.popup}`)];
 
 function createCard(placeValue, pictureValue){
   const card = document.createElement('div');
@@ -73,17 +90,17 @@ function createCard(placeValue, pictureValue){
   const cardName = document.createElement('h3');
   const likeButton = document.createElement('button');
 
-  card.classList.add('place-card');
+  card.classList.add(cardClasses.card);
 
-  cardImage.classList.add('place-card__image');
+  cardImage.classList.add(cardClasses.image);
   cardImage.style.backgroundImage = `url(${pictureValue})`;
-  deleteButton.classList.add('place-card__delete-icon');
+  deleteButton.classList.add(cardClasses.delete);
   cardImage.appendChild(deleteButton);
 
-  cardDescription.classList.add('place-card__description');
-  cardName.classList.add('place-card__name');
+  cardDescription.classList.add(cardClasses.description);
+  cardName.classList.add(cardClasses.name);
   cardName.textContent = placeValue;
-  likeButton.classList.add('place-card__like-icon');
+  likeButton.classList.add(cardClasses.like);
   cardDescription.appendChild(cardName);
   cardDescription.appendChild(likeButton);
 
@@ -121,8 +138,6 @@ function openAddForm(){
 function openEditForm(){
   const currentName = document.querySelector('.user-info__name').textContent;
   const currentAbout = document.querySelector('.user-info__job').textContent;
-  const name = editForm.elements.name;
-  const about = editForm.elements.about;
   const nameError = document.getElementById('nameError');
   const aboutError = document.getElementById('aboutError');
   editPopup.classList.add(popupClasses.popupOpened);
@@ -134,33 +149,31 @@ function openEditForm(){
 
 function editAuthor(event){
   event.preventDefault();
-  const name = editForm.elements.name.value;
-  const about = editForm.elements.about.value;
   const newName = document.querySelector('.user-info__name');
   const newAbout = document.querySelector('.user-info__job');
-  newName.textContent = name;
-  newAbout.textContent = about;
+  newName.textContent = name.value;
+  newAbout.textContent = about.value;
   editPopup.classList.remove(popupClasses.popupOpened);
 }
 
 function likeCard(event){
-  if(event.target.classList.contains('place-card__like-icon')){
-      event.target.classList.toggle('place-card__like-icon_liked');
+  if(event.target.classList.contains(cardClasses.like)){
+      event.target.classList.toggle(cardClasses.liked);
   }
 }
 
 function deleteCard(event){
   const card = event.path[2];
-  if(event.target.classList.contains('place-card__delete-icon')){
+  if(event.target.classList.contains(cardClasses.delete)){
       places.removeChild(card);
   }
 }
 
 function openImage(event){
-  if(event.target.classList.contains('place-card__image')){
+  if(event.target.classList.contains(cardClasses.image)){
     const imageAddress = event.target.style.backgroundImage;
-    const imageBox = imagePopup.children[0]; //fix
-    const image = imageBox.children[0]; //fix
+    const imageBox = imagePopup.children[0];
+    const image = imageBox.children[0];
     imagePopup.classList.add(popupClasses.popupOpened);
     imageBox.style.backgroundImage = imageAddress;
     image.src = imageAddress.slice(5, -2);
@@ -249,9 +262,9 @@ function setSubmitButtonState(button, inputs){
 }
 
 function checkFormInputs(form){
-  const inputs = form.querySelectorAll('.popup__input');
-  const errors = form.querySelectorAll('.popup__error');
-  const button = form.querySelector('.popup__button');
+  const inputs = form.querySelectorAll(`.${popupClasses.input}`);
+  const errors = form.querySelectorAll(`.${popupClasses.error}`);
+  const button = form.querySelector(`.${popupClasses.button}`);
   setSubmitButtonState(button, inputs);
   for(let i = 0; i < inputs.length; i++){
     checkInputValidity(inputs[i], errors[i]);
